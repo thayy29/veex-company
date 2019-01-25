@@ -192,7 +192,6 @@ article#main-col {
   width: 65%;
 }
 
-
 #main-col p {
   font-family: roboto;
   color: #B3B3B3;
@@ -203,13 +202,36 @@ article#main-col {
   text-transform: uppercase;
 }
 
-
 /* Sidebar */
 
 aside#sidebar {
   float: right;
   width: 30%;
-  margin-top: 10px;
+  margin-top: 52px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+
+/* Services */
+
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #ffffff;
+}
+
+#services li p {
+    color: #202125;
+}
+
+#sidebar .dark {
+  width: 80%;
 }
 
 
@@ -224,4 +246,39 @@ footer {
   background-color: #202125;
   text-align: center;
 
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+header {
+  padding-bottom: 20px;
+}
+
+#showcase h1 {
+  margin-top: 40px;
+}
+
+#newsletter button, .quote button {
+  display: block;
+  width: 100%;
+}
+
+#newsletter form input[type="email"], .quote input, .quote textarea {
+  width: 100%;
+  margin-bottom: 5px;
+ }
 }
